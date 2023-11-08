@@ -202,7 +202,7 @@
             "name": "Packmask",
             "description": "For a TMNF server, <packmask> must be set to 'nations' or 'stadium'. For TMUF it can be empty or set to 'united', or to one environment like 'desert', 'island', etc, or to the three environments of the older games with 'original' or 'sunrise'. Source:\r\nhttps:\/\/www.gamers.org\/tmf\/quickstart.html",
             "env_variable": "PACKMASK",
-            "default_value": "stadium",
+            "default_value": "",
             "user_viewable": false,
             "user_editable": false,
             "rules": "nullable|string|max:32",
