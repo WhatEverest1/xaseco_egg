@@ -7,6 +7,8 @@ RUN	apt update -y && apt upgrade -y \
     && echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list \
     && apt-get update && apt -y install php7.4
 
+RUN apt-get install -y php7.4-xml
+
 USER container
 ENV  USER=container HOME=/home/container
 WORKDIR	/home/container
