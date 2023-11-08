@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2023-11-08T21:18:28+00:00",
+    "exported_at": "2023-11-08T21:35:48+00:00",
     "name": "TM+XAseco",
     "author": "noreply@example.com",
     "description": null,
@@ -15,7 +15,7 @@
     "file_denylist": [],
     "startup": ".\/start.sh",
     "config": {
-        "files": "{\r\n    \"tmserver\/GameData\/Config\/dedicated_cfg.txt\": {\r\n        \"parser\": \"xml\",\r\n        \"find\": {\r\n            \"dedicated.masterserver_account.login\": \"{{server.build.env.MASTER_LOGIN}}\",\r\n            \"dedicated.masterserver_account.password\": \"{{server.build.env.MASTER_PASSWORD}}\",\r\n            \"dedicated.masterserver_account.validation_key\": \"{{server.build.env.VALIDATION_KEY}}\",\r\n            \"dedicated.server_options.name\": \"{{server.build.env.SERVER_NAME}}\",\r\n            \"dedicated.server_options.max_players\": \"{{server.build.env.MAX_PLAYER}}\",\r\n            \"dedicated.server_options.max_spectators\": \"{{server.build.env.MAX_PLAYER}}\",\r\n            \"dedicated.server_options.password\": \"{{server.build.env.SERVER_PASSWORD}}\",\r\n            \"dedicated.system_config.force_ip_address\": \"{{server.build.env.FORCE_IP_ADDRESS}}\",\r\n            \"dedicated.system_config.server_port\": \"{{server.build.default.port}}\",\r\n            \"dedicated.system_config.server_p2p_port\": \"{{server.build.env.SERVER_P2P_PORT}}\",\r\n            \"dedicated.system_config.xmlrpc_port\": \"{{server.build.env.RPC_PORT}}\",\r\n            \"dedicated.system_config.xmlrpc_allowremote\": \"True\",\r\n            \"dedicated.system_config.packmask\": \"{{{server.build.env.PACKMASK}}}\"\r\n        }\r\n    }\r\n}",
+        "files": "{\r\n    \"tmserver\/GameData\/Config\/dedicated_cfg.txt\": {\r\n        \"parser\": \"xml\",\r\n        \"find\": {\r\n            \"dedicated.masterserver_account.login\": \"{{server.build.env.MASTER_LOGIN}}\",\r\n            \"dedicated.masterserver_account.password\": \"{{server.build.env.MASTER_PASSWORD}}\",\r\n            \"dedicated.masterserver_account.validation_key\": \"{{server.build.env.VALIDATION_KEY}}\",\r\n            \"dedicated.server_options.name\": \"{{server.build.env.SERVER_NAME}}\",\r\n            \"dedicated.server_options.max_players\": \"{{server.build.env.MAX_PLAYER}}\",\r\n            \"dedicated.server_options.max_spectators\": \"{{server.build.env.MAX_PLAYER}}\",\r\n            \"dedicated.server_options.password\": \"{{server.build.env.SERVER_PASSWORD}}\",\r\n            \"dedicated.system_config.force_ip_address\": \"{{server.build.env.FORCE_IP_ADDRESS}}\",\r\n            \"dedicated.system_config.server_port\": \"{{server.build.default.port}}\",\r\n            \"dedicated.system_config.server_p2p_port\": \"{{server.build.env.SERVER_P2P_PORT}}\",\r\n            \"dedicated.system_config.xmlrpc_port\": \"{{server.build.env.RPC_PORT}}\",\r\n            \"dedicated.system_config.xmlrpc_allowremote\": \"True\",\r\n            \"dedicated.system_config.packmask\": \"{{server.build.env.PACKMASK}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{}",
         "logs": "{}",
         "stop": "stopserver"
@@ -202,7 +202,7 @@
             "name": "Packmask",
             "description": "For a TMNF server, <packmask> must be set to 'nations' or 'stadium'. For TMUF it can be empty or set to 'united', or to one environment like 'desert', 'island', etc, or to the three environments of the older games with 'original' or 'sunrise'. Source:\r\nhttps:\/\/www.gamers.org\/tmf\/quickstart.html",
             "env_variable": "PACKMASK",
-            "default_value": "",
+            "default_value": "stadium",
             "user_viewable": false,
             "user_editable": false,
             "rules": "nullable|string|max:32",
